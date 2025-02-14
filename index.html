@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Extra Credit JS Worksheet</title>
+    </head>
+
+    <body>
+        <h2>
+            Problem 1
+        </h2>
+    <script>
+        for (let i = 40; i >= 10; i -= 2) {
+            document.write(i + ", ");
+        }
+    </script>
+
+        <h2>
+            Problem 2
+        </h2>
+        <script>
+            document.write("The sum of your inputted numbers ")
+            let sum = 0;
+            while (sum <= 20) {
+                let num = Number(prompt("Enter a number for Problem 2:"));
+                document.write(num + ", ")
+                sum += num;
+            }
+            document.write(" is greater than/equal to 20!")
+        </script>
+
+        <h2>
+            Problem 3
+        </h2>
+        <script>
+            let numarray = []
+            sum = 0;
+            while (sum <= 20) {
+                num = Number(prompt("Enter a number for problem 3:"))
+                sum += num;
+                numarray.push(num);
+            }
+            document.write("Your array is: " + numarray 
+            + " and the sum of the numbers within is 20!")
+        </script>
+
+        <h2>
+            Problem 4
+        </h2>
+        <script>
+            let songs = {};
+            songs["Hey Jude"] = "The Beatles";
+            songs["Bohemian Rhapsody"] = "Freddie Mercury";
+            songs["Billie Jean"] = "Michael Jackson";
+            songs["Everybody Wants to Rule the World"] = "Tears for Fears";
+            songs["Clair de Lune"] = "Claude Debussy";
+            for (let song in songs) {
+                document.write(song + " - " + songs[song] + "<br>");
+            }
+        </script>
+
+        <h2>
+            Problem 5
+        </h2>
+        <script>
+            let userband = prompt("Enter the name of a band for Problem 5:");
+            for (song in songs) {
+                if (userband === songs[song]) {
+                    document.write("The song by " + userband
+                    + " is called " + song + ".")
+                }
+            }
+        </script>
+    </body>
+</html>
